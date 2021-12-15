@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="hello" content="width=device-width, initial-scale=1.0">
+    <title>hello</title>
+</head>
+<body>
+    <h1 id="tema">Ruh Ordo</h1>
+    <p id="text">Welcome to Ruh Ordo in Yssyk-Kul</p>
+    <img id="photo" src="img/Ruh ordo.jpg" height="400">
+    <br>
+    <button onclick="change()">Next</button>
+
+    <script>
+        function change(){
+            document.getElementById("photo").src="/home/student/Desktop/Arni/hello/img/Tash rabat.jpeg"
+            document.getElementById("tema").innerHTML="Tash rabat"
+            document.getElementById("text").innerHTML="Welcome to Tash Rabat"
+            document.getElementById("text").style.color="blew"
+            document.body.style.background="wheat";
+        }
+    </script>
+
+    <button onclick="back()">Back</button>
+
+    <script>
+        function back(){
+            document.getElementById("photo").src="/home/student/Desktop/Arni/hello/img/Ruh ordo.jpg"
+            document.getElementById("tema").innerHTML="Ruh ordo"
+            document.getElementById("text").innerHTML="Welcome to Ruh Ordo"
+            document.getElementById("text").style.color="blew"
+            document.body.style.background="wheat";
+        }
+    </script>
+
+    <h2 id="counter">0</h2>
+    <button onclick="plus()">add person for reservation</button>
+    <script>
+        c=0;
+        function plus(){
+            c++;
+            document.getElementById("counter").innerHTML=c;
+        }
+    </script>
+
+    <button onclick="minos()">minos person for reservation</button>
+    <script>
+        function minos(){
+            c--;
+            document.getElementById("counter").innerHTML=c;
+        }
+    </script>
+</body>
+</html>
